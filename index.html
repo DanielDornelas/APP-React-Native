@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetPrevê — previsão da qualidade da internet</title>
+<meta name="description" content="App que prevê a qualidade da sua internet nas próximas horas e diz se dá para fazer uma chamada de vídeo, assistir a um streaming ou enviar arquivos naquele horário.">
+<meta property="og:title" content="NetPrevê — saiba antes se a sua internet vai aguentar">
+<meta property="og:description" content="Previsão da qualidade da conexão em linguagem simples: Boa, Moderada ou Instável.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 28'%3E%3Crect x='0' y='16' width='8' height='12' rx='3' fill='%234F86D9'/%3E%3Crect x='13' y='8' width='8' height='20' rx='3' fill='%236FA0EA'/%3E%3Crect x='26' y='0' width='8' height='28' rx='3' fill='%239CC3FF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#EEF3F8}
+a{color:#1E5FAA}a:hover{color:#13294B}
+a:focus-visible,button:focus-visible{outline:3px solid #8DB8F2;outline-offset:3px;border-radius:6px}
+img{max-width:100%;height:auto}
+</style>
+<style>html{scroll-behavior:smooth}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}</style>
+</head>
+<body>
+<div style="font-family: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; color: #14213D; background: #EEF3F8; font-size: 18px; line-height: 1.6">
+
+<header style="background: #13294B; color: #FFFFFF">
+<div style="max-width: 1160px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#inicio" style="display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none">
+<svg width="34" height="28" viewBox="0 0 34 28" aria-hidden="true"><rect x="0" y="16" width="8" height="12" rx="3" fill="#4F86D9"></rect><rect x="13" y="8" width="8" height="20" rx="3" fill="#6FA0EA"></rect><rect x="26" y="0" width="8" height="28" rx="3" fill="#9CC3FF"></rect></svg>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.01em">NetPrevê</span>
+</a>
+<nav aria-label="Seções do site" style="display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 16px">
+<a href="#como-funciona" style="color: #DCE7F7; text-decoration: none">Como funciona</a>
+<a href="#qualidade" style="color: #DCE7F7; text-decoration: none">Boa, Moderada ou Instável</a>
+<a href="#atividades" style="color: #DCE7F7; text-decoration: none">Atividades</a>
+<a href="#tecnologia" style="color: #DCE7F7; text-decoration: none">Por dentro</a>
+<a href="#equipe" style="color: #DCE7F7; text-decoration: none">Equipe</a>
+</nav>
+</div>
+</header>
+
+<section id="inicio" style="background: #13294B; color: #FFFFFF; padding: 40px 0 88px">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 480px; min-width: 0">
+<h1 style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 24px">Saiba antes se a sua internet vai aguentar.</h1>
+<p style="font-size: 21px; line-height: 1.55; color: #DCE7F7; margin: 0 0 32px; max-width: 34em">O NetPrevê mostra como deve estar a conexão perto de você nas próximas horas e diz, em linguagem simples, se dá para fazer uma chamada de vídeo, assistir a um streaming ou enviar um arquivo naquele horário.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="https://github.com/DanielDornelas/netpreve-app" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 12px; background: #1E5FAA; color: #FFFFFF; font-weight: 700; text-decoration: none">Ver o código do app</a>
+<a href="https://github.com/DanielDornelas/connectivity-forecast-squad-15" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 12px; border: 2px solid #6F8DB8; color: #FFFFFF; font-weight: 600; text-decoration: none">Ver o código da API</a>
+</div>
+</div>
+
+<figure aria-label="Previsão das próximas horas em 20/08: das 13h às 18h a conexão fica entre Moderada e Instável; o melhor horário da faixa é 19/08 às 23:00, com qualidade Boa" style="flex: 1 1 400px; min-width: 0; margin: 0; background: #FFFFFF; color: #14213D; border-radius: 22px; padding: 28px 28px 24px; box-shadow: 0 30px 60px rgba(5, 15, 35, 0.35)">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 4px">
+<p style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 20px; margin: 0">Próximas horas</p>
+<p style="font-size: 15px; color: #4A5B78; margin: 0">Ponto de medição a 41,1 km</p>
+</div>
+<p style="font-size: 15px; color: #4A5B78; margin: 0 0 22px">20/08, tempo de resposta previsto em cada horário</p>
+<div style="display: flex; align-items: flex-end; gap: 10px; height: 170px">
+<div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end">
+<div style="width: 100%; max-width: 44px; height: 66%; background: #D98A1F; border-radius: 10px"></div>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 15px">13h</span>
+<span style="font-size: 13px; color: #4A5B78; margin-top: -8px">76 ms</span>
+</div>
+<div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end">
+<div style="width: 100%; max-width: 44px; height: 66%; background: #D98A1F; border-radius: 10px"></div>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 15px">14h</span>
+<span style="font-size: 13px; color: #4A5B78; margin-top: -8px">82 ms</span>
+</div>
+<div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end">
+<div style="width: 100%; max-width: 44px; height: 33%; background: #C8434F; border-radius: 10px"></div>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 15px">15h</span>
+<span style="font-size: 13px; color: #4A5B78; margin-top: -8px">86 ms</span>
+</div>
+<div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end">
+<div style="width: 100%; max-width: 44px; height: 33%; background: #C8434F; border-radius: 10px"></div>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 15px">16h</span>
+<span style="font-size: 13px; color: #4A5B78; margin-top: -8px">88 ms</span>
+</div>
+<div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end">
+<div style="width: 100%; max-width: 44px; height: 33%; background: #C8434F; border-radius: 10px"></div>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 15px">17h</span>
+<span style="font-size: 13px; color: #4A5B78; margin-top: -8px">82 ms</span>
+</div>
+<div style="flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end">
+<div style="width: 100%; max-width: 44px; height: 66%; background: #D98A1F; border-radius: 10px"></div>
+<span style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 15px">18h</span>
+<span style="font-size: 13px; color: #4A5B78; margin-top: -8px">81 ms</span>
+</div>
+</div>
+<div style="margin-top: 22px; padding: 14px 16px; border-radius: 14px; background: #E3F2EE; display: flex; gap: 12px; align-items: center">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#187264" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg>
+<p style="margin: 0; font-size: 16px"><strong>Melhor horário: 19/08 às 23:00.</strong> Qualidade Boa, com 23 ms de tempo de resposta.</p>
+</div>
+</figure>
+</div>
+</section>
+
+<section aria-labelledby="problema-titulo" style="padding: 88px 0 24px">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 32px 72px">
+<h2 id="problema-titulo" style="flex: 1 1 340px; font-family: 'Lexend', sans-serif; font-weight: 700; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0">A gente só descobre que a internet está ruim quando a chamada cai.</h2>
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="margin: 0 0 18px">Quem estuda ou trabalha online depende da conexão em horários marcados: a aula ao vivo, a reunião com o cliente, o envio de um trabalho no último minuto. Os testes de velocidade mostram como a internet está agora, mas não dizem como ela vai estar daqui a algumas horas.</p>
+<p style="margin: 0">O NetPrevê responde a essa pergunta antes. Ele usa previsões feitas por modelos a partir de medições de pontos de referência e traduz os números em algo que qualquer pessoa entende: uma palavra, uma cor e um conselho do que fazer.</p>
+</div>
+</div>
+</section>
+
+<section id="como-funciona" aria-labelledby="como-titulo" style="padding: 72px 0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px">
+<h2 id="como-titulo" style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px">Como funciona</h2>
+<p style="margin: 0 0 44px; max-width: 40em; color: #33445F">Quatro passos, do primeiro toque até a resposta que importa.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 230px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<img src="images/tela-modelo.png" alt="Tela do app com a lista dos modelos de previsão A, B, C e D" style="width: 100%; max-width: 250px; align-self: center">
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: 0 0 36px; height: 36px; border-radius: 50%; background: #1E5FAA; color: #FFFFFF; font-family: 'Lexend', sans-serif; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span>
+<div><h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 20px; margin: 4px 0 6px">Escolha um modelo</h3><p style="margin: 0; font-size: 16px; color: #33445F">Cada modelo de previsão foi feito por um grupo diferente. A escolha fica salva no aparelho e pode ser trocada depois.</p></div>
+</div>
+</div>
+<div style="flex: 1 1 230px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<img src="images/tela-previsao.png" alt="Tela de previsão: qualidade Moderada, 73 ms de tempo de resposta, 3,9% de perda de pacotes e a recomendação Reduza o uso de rede" style="width: 100%; max-width: 250px; align-self: center">
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: 0 0 36px; height: 36px; border-radius: 50%; background: #1E5FAA; color: #FFFFFF; font-family: 'Lexend', sans-serif; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span>
+<div><h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 20px; margin: 4px 0 6px">Veja a previsão perto de você</h3><p style="margin: 0; font-size: 16px; color: #33445F">Com a sua permissão, o app encontra o ponto de medição mais próximo e mostra a qualidade, o tempo de resposta, a perda de pacotes e o que fazer.</p></div>
+</div>
+</div>
+<div style="flex: 1 1 230px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<img src="images/tela-proximas-horas.png" alt="Faixa das próximas horas com colunas coloridas por qualidade e o melhor horário em destaque" style="width: 100%; max-width: 250px; align-self: center">
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: 0 0 36px; height: 36px; border-radius: 50%; background: #1E5FAA; color: #FFFFFF; font-family: 'Lexend', sans-serif; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span>
+<div><h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 20px; margin: 4px 0 6px">Confira as próximas horas</h3><p style="margin: 0; font-size: 16px; color: #33445F">A previsão hora a hora aparece em uma faixa, com o melhor horário em destaque. Um toque seleciona o horário que você quer.</p></div>
+</div>
+</div>
+<div style="flex: 1 1 230px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<img src="images/tela-atividade.png" alt="Verificação de chamada de vídeo às 15h com o resultado Melhor escolher outro horário" style="width: 100%; max-width: 250px; align-self: center">
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<span style="flex: 0 0 36px; height: 36px; border-radius: 50%; background: #1E5FAA; color: #FFFFFF; font-family: 'Lexend', sans-serif; font-weight: 700; display: flex; align-items: center; justify-content: center">4</span>
+<div><h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 20px; margin: 4px 0 6px">Pergunte se dá para fazer</h3><p style="margin: 0; font-size: 16px; color: #33445F">Escolha a atividade e toque em verificar. O app responde “Bom momento para isso” ou “Melhor escolher outro horário”.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="qualidade" aria-labelledby="qualidade-titulo" style="background: #FFFFFF; padding: 88px 0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px">
+<h2 id="qualidade-titulo" style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px">Boa, Moderada ou Instável</h2>
+<p style="margin: 0 0 40px; max-width: 42em; color: #33445F">Em vez de números soltos, a previsão vira uma de três palavras. Elas vêm de duas medidas da rede: o tempo de resposta, que é quanto um sinal leva para ir e voltar, e a perda de pacotes, que é quanto da informação se perde no caminho. A pior das duas decide a qualidade.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; border-radius: 20px; overflow: hidden">
+<div style="flex: 1 1 260px; min-width: 0; background: #187264; color: #FFFFFF; padding: 30px 28px">
+<div style="display: flex; align-items: flex-end; gap: 5px; height: 30px; margin-bottom: 18px" aria-hidden="true"><span style="width: 9px; height: 12px; background: #FFFFFF; border-radius: 3px"></span><span style="width: 9px; height: 20px; background: #FFFFFF; border-radius: 3px"></span><span style="width: 9px; height: 30px; background: #FFFFFF; border-radius: 3px"></span></div>
+<h3 style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: 32px; margin: 0 0 6px">Boa</h3>
+<p style="margin: 0 0 16px; font-size: 17px">Conexão prevista adequada para qualquer atividade.</p>
+<p style="margin: 0; font-size: 16px; color: #E2F4EF">Menos de 60 ms de tempo de resposta e menos de 1% de perda.</p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; background: #A86412; color: #FFFFFF; padding: 30px 28px">
+<div style="display: flex; align-items: flex-end; gap: 5px; height: 30px; margin-bottom: 18px" aria-hidden="true"><span style="width: 9px; height: 12px; background: #FFFFFF; border-radius: 3px"></span><span style="width: 9px; height: 20px; background: #FFFFFF; border-radius: 3px"></span><span style="width: 9px; height: 30px; background: rgba(255,255,255,0.35); border-radius: 3px"></span></div>
+<h3 style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: 32px; margin: 0 0 6px">Moderada</h3>
+<p style="margin: 0 0 16px; font-size: 17px">Pode haver instabilidade. O app sugere reduzir o uso de rede.</p>
+<p style="margin: 0; font-size: 16px; color: #FBEBD6">De 60 a 149 ms, ou de 1% a menos de 5% de perda.</p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; background: #B8323F; color: #FFFFFF; padding: 30px 28px">
+<div style="display: flex; align-items: flex-end; gap: 5px; height: 30px; margin-bottom: 18px" aria-hidden="true"><span style="width: 9px; height: 12px; background: #FFFFFF; border-radius: 3px"></span><span style="width: 9px; height: 20px; background: rgba(255,255,255,0.35); border-radius: 3px"></span><span style="width: 9px; height: 30px; background: rgba(255,255,255,0.35); border-radius: 3px"></span></div>
+<h3 style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: 32px; margin: 0 0 6px">Instável</h3>
+<p style="margin: 0 0 16px; font-size: 17px">Risco de quedas. O app sugere preparar conteúdo offline.</p>
+<p style="margin: 0; font-size: 16px; color: #FBE3E5">150 ms ou mais, ou 5% de perda ou mais.</p>
+</div>
+</div>
+<p style="margin: 24px 0 0; font-size: 16px; color: #33445F; max-width: 46em">No app, a qualidade nunca depende só da cor: a palavra, as barrinhas de sinal e a cor aparecem sempre juntas.</p>
+</div>
+</section>
+
+<section id="atividades" aria-labelledby="atividades-titulo" style="padding: 88px 0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 460px; min-width: 0">
+<h2 id="atividades-titulo" style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px">Vai dar para fazer?</h2>
+<p style="margin: 0 0 28px; color: #33445F">Cada atividade exige uma qualidade mínima. O app compara a previsão do horário escolhido com essa exigência.</p>
+<div style="overflow-x: auto">
+<table style="width: 100%; border-collapse: collapse; font-size: 17px; min-width: 360px">
+<caption style="text-align: left; font-size: 15px; color: #4A5B78; padding-bottom: 10px">Qualidade mínima de cada atividade</caption>
+<thead>
+<tr><th scope="col" style="text-align: left; padding: 12px 14px; border-bottom: 2px solid #C7D3E3; font-family: 'Lexend', sans-serif; font-weight: 600">Atividade</th><th scope="col" style="text-align: left; padding: 12px 14px; border-bottom: 2px solid #C7D3E3; font-family: 'Lexend', sans-serif; font-weight: 600">Precisa de</th></tr>
+</thead>
+<tbody>
+<tr><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE">Chamada de vídeo</td><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE"><strong style="color: #187264">Boa</strong></td></tr>
+<tr><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE">Streaming</td><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE"><strong style="color: #187264">Boa</strong></td></tr>
+<tr><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE">Chamada de voz</td><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE"><strong style="color: #8F540E">Moderada</strong> ou melhor</td></tr>
+<tr><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE">Envio de arquivos</td><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE"><strong style="color: #8F540E">Moderada</strong> ou melhor</td></tr>
+<tr><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE">Navegação</td><td style="padding: 12px 14px; border-bottom: 1px solid #D9E2EE"><strong style="color: #8F540E">Moderada</strong> ou melhor</td></tr>
+<tr><td style="padding: 12px 14px">Mensagens</td><td style="padding: 12px 14px">Qualquer qualidade</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-wrap: wrap; gap: 24px; justify-content: center">
+<img src="images/tela-atividade.png" alt="Resultado da verificação: chamada de vídeo às 15h, qualidade prevista Instável, melhor escolher outro horário" style="width: 46%; min-width: 180px; max-width: 250px">
+<img src="images/tela-comparar.png" alt="Comparação dos modelos A, B, C e D para o mesmo horário, sem declarar vencedor" style="width: 46%; min-width: 180px; max-width: 250px">
+</div>
+</div>
+<div style="max-width: 1160px; margin: 40px auto 0; padding: 0 24px">
+<p style="margin: 0; max-width: 46em; color: #33445F">Na dúvida, compare: o app mostra o que os quatro modelos preveem para o mesmo local e horário, lado a lado, sem eleger um vencedor. As diferenças mostram como as abordagens divergem, não qual está certa.</p>
+</div>
+</section>
+
+<section id="tecnologia" aria-labelledby="tecnologia-titulo" style="background: #13294B; color: #FFFFFF; padding: 88px 0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px">
+<h2 id="tecnologia-titulo" style="font-family: 'Lexend', sans-serif; font-weight: 700; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px">Por dentro do NetPrevê</h2>
+<p style="margin: 0 0 40px; max-width: 44em; color: #DCE7F7">O produto tem duas partes: o aplicativo, que o usuário usa, e a API, que guarda as previsões e aplica as regras de qualidade.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 16px">
+<div style="flex: 1 1 260px; min-width: 0; border: 2px solid #3E5C8A; border-radius: 18px; padding: 24px">
+<h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 22px; margin: 0 0 8px">Aplicativo</h3>
+<p style="margin: 0 0 14px; color: #DCE7F7; font-size: 16px">React Native com Expo. Roda no Android, no iPhone e no navegador. Um único serviço conversa com a API, com tempo limite de 60 segundos e mensagens de erro que dizem o que fazer.</p>
+<p style="margin: 0; font-size: 15px; color: #B9CBE6">React Native, Expo, JavaScript, expo-location</p>
+</div>
+<div style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; padding: 0 4px" aria-hidden="true">
+<svg width="40" height="24" viewBox="0 0 40 24" fill="none" stroke="#8DB8F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h34M28 4l8 8-8 8"></path></svg>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; border: 2px solid #3E5C8A; border-radius: 18px; padding: 24px">
+<h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 22px; margin: 0 0 8px">API de previsão</h3>
+<p style="margin: 0 0 14px; color: #DCE7F7; font-size: 16px">Java com Spring Boot, em camadas: o controller recebe o pedido, o service aplica as regras de classificação e o repository lê e valida os dados.</p>
+<p style="margin: 0; font-size: 15px; color: #B9CBE6">Java 17, Spring Boot, Maven, REST em /api/v1</p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; border: 2px solid #3E5C8A; border-radius: 18px; padding: 24px">
+<h3 style="font-family: 'Lexend', sans-serif; font-weight: 600; font-size: 22px; margin: 0 0 8px">Qualidade e documentação</h3>
+<p style="margin: 0 0 14px; color: #DCE7F7; font-size: 16px">Contrato documentado com Swagger, testes automatizados com JUnit e Mockito e cobertura medida com JaCoCo. O README de cada repositório explica como rodar.</p>
+<p style="margin: 0; font-size: 15px; color: #B9CBE6">Swagger, JUnit, Mockito, JaCoCo, GitHub, Jira</p>
+</div>
+</div>
+<div style="margin-top: 40px; padding: 22px 24px; border-radius: 16px; background: #1D3A66; display: flex; gap: 16px; align-items: flex-start">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD27A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16.5v.5"></path></svg>
+<p style="margin: 0; color: #EAF1FB; font-size: 17px"><strong>Os dados são de exemplo.</strong> Nesta versão acadêmica, a API usa previsões fixas e fictícias. A previsão é ligada a um ponto de medição de referência e não mede a rede do seu aparelho, e o app mostra esse aviso na tela.</p>
+</div>
+</div>
+</section>
+
+<section id="equipe" aria-label="Equipe" style="padding: 88px 0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 40px 72px">
+<ul style="flex: 1 1 420px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<li style="padding: 16px 0; border-bottom: 1px solid #C7D3E3; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: 20px">Daniel da Silva Dornelas</li>
+<li style="padding: 16px 0; border-bottom: 1px solid #C7D3E3; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: 20px">Melissa Alves dos Santos</li>
+<li style="padding: 16px 0; border-bottom: 1px solid #C7D3E3; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: 20px">Samuel Conceição de Souza</li>
+<li style="padding: 16px 0; border-bottom: 1px solid #C7D3E3; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: 20px">Vinícius Araújo Alves</li>
+<li style="padding: 16px 0; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: 20px">Alexander Penninches Iwanami</li>
+</ul>
+</div>
+</section>
+
+<footer style="background: #0E1F3A; color: #DCE7F7; padding: 40px 0">
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px">
+<p style="margin: 0; font-family: 'Lexend', sans-serif; font-weight: 700; font-size: 20px; color: #FFFFFF">NetPrevê</p>
+<nav aria-label="Repositórios" style="display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 16px">
+<a href="https://github.com/DanielDornelas/netpreve-app" style="color: #BFD6F7">Repositório do aplicativo</a>
+<a href="https://github.com/DanielDornelas/connectivity-forecast-squad-15" style="color: #BFD6F7">Repositório da API</a>
+</nav>
+<p style="margin: 0; font-size: 15px; color: #A9BCD8">Projeto acadêmico, licença MIT.</p>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
